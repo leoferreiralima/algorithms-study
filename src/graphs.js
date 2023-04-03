@@ -7,10 +7,10 @@ const graph = {
   f: [],
 };
 
-console.log('dephtFirst');
+console.log('dephtFirst:');
 dephtFirst(graph);
 
-console.log('breadhFirst');
+console.log('breadhFirst:');
 breadhFirst(graph);
 
 function breadhFirst(graph) {
