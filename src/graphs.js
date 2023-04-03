@@ -8,13 +8,13 @@ const graph = {
 };
 
 console.log('dephtFirst:');
-dephtFirst(graph);
+dephtFirst(graph, 'a');
 
 console.log('breadhFirst:');
-breadhFirst(graph);
+breadhFirst(graph, 'a');
 
-function breadhFirst(graph) {
-  const breadhFirstQueue = ['a'];
+function breadhFirst(graph, root) {
+  const breadhFirstQueue = [root];
 
   do {
     const currentNode = breadhFirstQueue.shift();
@@ -25,8 +25,8 @@ function breadhFirst(graph) {
   } while (breadhFirstQueue.length > 0);
 }
 
-function dephtFirst(graph) {
-  const dephtFirstStack = ['a'];
+function dephtFirst(graph, root) {
+  const dephtFirstStack = [root];
 
   do {
     const currentNode = dephtFirstStack.pop();
